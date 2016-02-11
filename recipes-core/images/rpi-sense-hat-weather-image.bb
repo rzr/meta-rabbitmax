@@ -1,4 +1,4 @@
-include rpi-basic-image.bb
+include recipes-core/images/rpi-basic-image.bb
 
 IMAGE_INSTALL_append = " connman connman-client hostapd \
                         nodejs nodejs-npm \

@@ -6,7 +6,11 @@ PR = "r1"
 
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/Apache-2.0;md5=89aea4e17d99a7cacdbeed46a0096b10"
 
-SRC_URI = "git://github.com/RabbitPi/rabbitpi-config.git;branch=master;tag=b00a48298b5854e3c0151ad46c89f1c5e546da52"
+SRC_URI = "git://github.com/RabbitPi/rabbitpi-config.git;branch=master;tag=95af2fa40f7d19c1b1bb66de0af8b4970522c909"
+
+inherit systemd
+
+SYSTEMD_SERVICE_${PN} = "rabbitpi-config.service"
 
 DEPENDS = "nodejs"
 
@@ -24,6 +28,10 @@ do_install() {
  rm -rf ${D}
  mkdir -p ${D}/opt/rabbitpi-config
  cp -R ${S}/* ${D}/opt/rabbitpi-config/
+
+ if ${@bb.utils.contains('DISTRO_FEATURES', 'systemd', 'true', 'false', d)}; then
+  install -p -D ${S}/systemd/rabbitpi-config.service ${D}${systemd_unitdir}/system/rabbitpi-config.service
+ fi
 }
 
 FILES_${PN} = ""

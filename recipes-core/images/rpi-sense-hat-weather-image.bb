@@ -10,5 +10,5 @@ IMAGE_INSTALL_append = " connman connman-client hostapd \
                         python python-dev python-modules python-pip \
                         python-sense-hat \
                         i2c-tools \
-                        rabbitpi-config \
+                        rabbitmax-config \
                         "

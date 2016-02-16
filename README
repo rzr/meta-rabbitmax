@@ -1,5 +1,5 @@
 This README file contains information on the contents of the
-rabbitpi layer.
+rabbitmax layer.
 
 Please see the corresponding sections below for details.
 
@@ -24,7 +24,7 @@ This layer depends on:
 Patches
 =======
 
-Please submit any patches against the rabbitpi layer to the
+Please submit any patches against the rabbitmax layer to the
 xxxx mailing list (xxxx@zzzz.org) and cc: the maintainer:
 
 Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
@@ -33,32 +33,32 @@ Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
 Table of Contents
 =================
 
-  I. Adding the rabbitpi layer to your build
+  I. Adding the rabbitmax layer to your build
  II. Misc
 
 
-I. Adding the rabbitpi layer to your build
+I. Adding the rabbitmax layer to your build
 =================================================
 
---- replace with specific instructions for the rabbitpi layer ---
+--- replace with specific instructions for the rabbitmax layer ---
 
 In order to use this layer, you need to make the build system aware of
 it.
 
-Assuming the rabbitpi layer exists at the top-level of your
+Assuming the rabbitmax layer exists at the top-level of your
 yocto build tree, you can add it to the build system by adding the
-location of the rabbitpi layer to bblayers.conf, along with any
+location of the rabbitmax layer to bblayers.conf, along with any
 other layers needed. e.g.:
 
   BBLAYERS ?= " \
     /path/to/yocto/meta \
     /path/to/yocto/meta-yocto \
     /path/to/yocto/meta-yocto-bsp \
-    /path/to/yocto/meta-rabbitpi \
+    /path/to/yocto/meta-rabbitmax \
     "
 
 
 II. Misc
 ========
 
---- replace with specific information about the rabbitpi layer ---
+--- replace with specific information about the rabbitmax layer ---

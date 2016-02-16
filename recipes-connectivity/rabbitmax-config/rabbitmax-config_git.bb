@@ -6,13 +6,15 @@ PR = "r1"
 
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/Apache-2.0;md5=89aea4e17d99a7cacdbeed46a0096b10"
 
-SRC_URI = "git://github.com/RabbitMax/rabbitmax-config.git;branch=master;tag=1ef211b55dd023161b6b5264aa3ab99d27c86e85"
+SRC_URI = "git://github.com/RabbitMax/rabbitmax-config.git;branch=master;tag=e49d9615b05cce4779d9dc1757901077d16b9cd5"
 
 inherit systemd
 
 SYSTEMD_SERVICE_${PN} = "rabbitmax-config.service"
 
 DEPENDS = "nodejs"
+
+RDEPENDS_${PN} = "connman"
 
 S = "${WORKDIR}/git"
 

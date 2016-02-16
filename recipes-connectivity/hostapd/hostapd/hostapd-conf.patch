@@ -132,7 +132,7 @@
 -# ad = IEEE 802.11ad (60 GHz); a/g options are used with IEEE 802.11n, too, to
 -# specify band)
 -# Default: IEEE 802.11b
-+ssid=RabbitPi
++ssid=RabbitMax
  hw_mode=g
 -
 -# Channel number (IEEE 802.11)

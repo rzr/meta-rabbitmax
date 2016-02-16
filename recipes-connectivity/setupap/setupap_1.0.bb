@@ -1,5 +1,5 @@
 DESCRIPTION = "Helper scripts to setup WiFi AP"
-HOMEPAGE = "https://github.com/RabbitPi"
+HOMEPAGE = "https://github.com/RabbitMax"
 SECTION = "Network & Connectivity"
 LICENSE = "Apache-2.0"
 PR = "r1"

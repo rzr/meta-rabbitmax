@@ -6,7 +6,8 @@ PR = "r1"
 
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/Apache-2.0;md5=89aea4e17d99a7cacdbeed46a0096b10"
 
-SRC_URI = "git://github.com/RabbitMax/rabbitmax-config.git;branch=master;tag=e49d9615b05cce4779d9dc1757901077d16b9cd5"
+SRCREV="d2fba0c04f206f527d1845e8a5212ae363f640d9"
+SRC_URI = "git://github.com/RabbitMax/rabbitmax-config.git;protocol=https"
 
 inherit systemd
 

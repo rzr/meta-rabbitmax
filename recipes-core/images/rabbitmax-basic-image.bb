@@ -1,6 +1,6 @@
 include recipes-core/images/rpi-basic-image.bb
 
-IMAGE_INSTALL_append = " connman connman-client hostapd \
+IMAGE_INSTALL_append = " connman connman-client \
                         nodejs nodejs-npm \
                         git \
                         autoconf automake binutils binutils-symlinks \

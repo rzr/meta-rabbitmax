@@ -12,12 +12,11 @@ This layer depends on:
   URI: git://git.openembedded.org/bitbake
   branch: master
 
-  URI: git://git.openembedded.org/openembedded-core
-  layers: meta
+  URI: git://git.openembedded.org/meta-openembedded.git
+  layers: meta-oe, meta-python, meta-networking
   branch: master
 
-  URI: git://git.yoctoproject.org/xxxx
-  layers: xxxx
+  URI: git://git.yoctoproject.org/meta-raspberrypi.git
   branch: master
 
 
@@ -54,6 +53,10 @@ other layers needed. e.g.:
     /path/to/yocto/meta \
     /path/to/yocto/meta-yocto \
     /path/to/yocto/meta-yocto-bsp \
+    /path/to/yocto/meta-openembedded/meta-oe \
+    /path/to/yocto/meta-openembedded/meta-networking \
+    /path/to/yocto/meta-openembedded/meta-python \
+    /path/to/yocto/meta-raspberrypi \
     /path/to/yocto/meta-rabbitmax \
     "
 

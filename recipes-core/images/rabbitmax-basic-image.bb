@@ -9,5 +9,6 @@ IMAGE_INSTALL_append = " connman connman-client \
                         dnsmasq \
                         i2c-tools \
                         rabbitmax-config \
+                        rpi-gpio \
                         sudo \
                         "

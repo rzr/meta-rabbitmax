@@ -8,7 +8,9 @@ IMAGE_INSTALL_append = " connman connman-client \
                         gettext make libstdc++ libstdc++-dev file coreutils \
                         dnsmasq \
                         i2c-tools \
+                        os-release \
                         rabbitmax-config \
                         rpi-gpio \
+                        screen \
                         sudo \
                         "

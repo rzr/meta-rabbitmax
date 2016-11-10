@@ -26,10 +26,10 @@ do_compile() {
 
 do_install() {
  # copy script setting up WiFi access point
- mkdir -p ${D}/usr/local/sbin/
- install -m 0755 ${WORKDIR}/setupap ${D}/usr/local/sbin/setupap
+ install -d ${D}/usr/sbin/
+ install -m 0755 ${WORKDIR}/setupap ${D}/usr/sbin/setupap
 }
 
 FILES_${PN} = ""
-FILES_${PN} += "/usr/local/sbin/"
-FILES_${PN} += "/usr/local/sbin/setupap"
+FILES_${PN} += "/usr/sbin/"
+FILES_${PN} += "/usr/sbin/setupap"
